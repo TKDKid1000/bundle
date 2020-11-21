@@ -102,5 +102,13 @@ function generatecmdair() {
     var s16 = document.getElementById("s16").value;
     nbt = nbt + `{Count:1b,id:"${s16}"},`
     document.getElementById("outputcmd").innerHTML = `/give @s bundle{Items:[${nbt}]}`;
-    
+}
+function toggleair() {
+    if (document.getElementById("togglebtn").innerHTML == "Allow air") {
+        document.getElementById("generate").onclick = "generatecmdair()"
+        document.getElementById("togglebtn").innerHTML == "Disable air")
+    } else {
+        document.getElementById("").onclick = "generatecmd()"
+        document.getElementById("togglebtn").innerHTML == "Allow air")
+    }
 }
